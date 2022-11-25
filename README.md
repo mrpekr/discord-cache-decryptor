@@ -1,10 +1,10 @@
-[![GitHub stars](https://img.shields.io/github/stars/mrpekr/GofileReuploader?color=lime)](https://github.com/mrpekr/GofileReuploader/stargazers) ![GitHub last commit](https://img.shields.io/github/last-commit/mrpekr/GofileReuploader) ![GitHub forks](https://img.shields.io/github/forks/mrpekr/gofilereuploader?color=lime)
+[![GitHub stars](https://img.shields.io/github/stars/mrpekr/discord-cache-decryptor?color=lime)](https://github.com/mrpekr/discord-cache-decryptor/stargazers) ![GitHub last commit](https://img.shields.io/github/last-commit/mrpekr/discord-cache-decryptor) ![GitHub forks](https://img.shields.io/github/forks/mrpekr/discord-cache-decryptor?color=lime)
 
 #### Discord Cache Decryptor was made by
 Love ❌
 code ✅
 
-A Simple Script That Downloads File from Gofile and uploads it to Gofile all links are then send to Discord Channel 
+Command line tool to Decrypt Discord Cache Files 
 
 |    Step by Step Installation 		|
 | ------------------------------------ 	|
