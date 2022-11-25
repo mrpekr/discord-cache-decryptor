@@ -11,7 +11,7 @@ Command line tool to Decrypt Discord Cache Files
 | `git clone` this project or simply [download](https://github.com/mrpekr/discord-cache-decryptor/archive/refs/heads/main.zip) it	|
 | Open the folder in [visual studio code](https://code.visualstudio.com/Download#) or other editor of your choice							|
 | open terminal and type `pip install -r requirements.txt` to install the required modules (Not Yet Included) 		|
-| Copy Contents of %appdata%\discord\Cache to files folder 				|
+| Copy Contents of `%appdata%\discord\Cache` to `files` folder 				|
 | Run The script |
 | Done! 				|
 
