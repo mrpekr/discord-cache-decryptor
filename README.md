@@ -18,6 +18,6 @@ Command line tool to Decrypt Discord Cache Files
 ### Todo List
 - [ ] Make Code Look Better
 - [ ] Add Menu and Custom Cache Path
-- [ ] Try to fix some videos being corrupted 
+- [ ] Try to fix some videos being corrupted https://github.com/mrpekr/discord-cache-decryptor/issues/1
 - [ ] Clean up Code
 - [ ] More Stuff Comming Soon ... (Maybe)
