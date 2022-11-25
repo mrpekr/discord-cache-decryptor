@@ -1,4 +1,0 @@
-1. Copy Contents of %appdata%\discord\Cache to files folder
-2. run main.py
-
-make sure to install requirements.txt: pip install -r requirements.txt
