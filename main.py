@@ -1,9 +1,10 @@
-import filetype, os
+import filetype, os, getpass
 from pathlib import Path
+import shutil
+import time, sys
 
 keep_mpegs = False #Change to True if you want to keep Mpegs (Default: False)
-
-list = os.listdir("./files/")
+auto_copy = True #Changes if cache files will be copied from default path or custom (Default: True)
 
 png= []
 jpeg= []
@@ -14,8 +15,44 @@ webm= []
 mpeg= []
 mp3= []
 
+print("Welcome to Discord Cache Decryptor")
+
+if auto_copy == True:
+    loc = r'C:\Users\mrpek\AppData\Roaming\discord\Cache'
+else:   
+    input = input("Please Enter the Full Path to your Discord Cache Folder: ")
+    loc = input.join(" %(getpass.getuser())")
+
+
+print("Folder Found Making Copy for Decrypting...")
+sys.stdout.flush()
+
+if os.path.exists("decrypted"):
+    shutil.rmtree("decrypted")
+
+floc = os.getcwd() + "\decrypted"
+
+src=r"C:\Users\%s\AppData\Roaming\discord\Cache" %(getpass.getuser())
+
+def copyFile(src, floc):
+    try:
+        shutil.copytree(src, floc)
+    # eg. src and dest are the same file
+    except shutil.Error as e:
+        return
+    # eg. source or destination doesn't exist
+    except IOError as e:
+        return
+
+copyFile(src, floc)
+
+list = os.listdir("decrypted")
+
+print("Files Copyed Searching for File Types...")
+sys.stdout.flush()
+
 for x in list:
-    path = "./files/filename"
+    path = "./decrypted/filename"
     file = path.replace("filename", x)
     kind = filetype.guess(file)
     if kind is None:
@@ -54,6 +91,7 @@ for x in list:
         continue
         
 print("Found File Types Converting...")
+sys.stdout.flush()
 
 for x in png:
     p = Path(x)
@@ -86,3 +124,5 @@ for x in mpeg:
 for x in mp3:
     p = Path(x)
     p.rename(p.with_suffix('.mp3'))
+
+print("Done! Cache Files Decrypted! you can find them in: " + os.getcwd() + "\decrypted")
