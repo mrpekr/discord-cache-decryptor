@@ -1,7 +1,7 @@
 import filetype, os
 from pathlib import Path
 
-keep_mpegs = False #Change to True if you want to keep Mpegs (Default: False because from my testing all of them were just discord sounds)
+keep_mpegs = False #Change to True if you want to keep Mpegs (Default: False)
 
 list = os.listdir("./files/")
 
